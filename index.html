@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Sacramento&family=Open+Sans:wght@300..800&family=Scheherazade+New:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Forum&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/js/main.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Fulan & Fulana Wedding</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Cover undangan -->
+    <div id="cover">
+      <div>
+        <h4
+          class="cover-judul"
+          data-aos="fade-right"
+          data-aos-delay="1000"
+          data-aos-duration="4000"
+        >
+          The Wedding Of
+        </h4>
+        <h1
+          class="cover-pengantin"
+          data-aos="fade-left"
+          data-aos-delay="1500"
+          data-aos-duration="4000"
+        >
+          Fulan & Fulana
+        </h1>
+        <p
+          class="cover-tanggal"
+          data-aos="fade-up"
+          data-aos-delay="2000"
+          data-aos-duration="4000"
+        >
+          31 . Februari . 2031
+        </p>
+        <p
+          class="cover-tamu"
+          data-aos="fade-up"
+          data-aos-delay="2500"
+          data-aos-duration="4000"
+        >
+          Kepada Bapak/Ibu/Saudara/i
+        </p>
+        <h4
+          class="cover-keluarga"
+          data-aos="fade-up"
+          data-aos-delay="3000"
+          data-aos-duration="4000"
+        >
+          Yth.Kel.Besar Abah H Maini
+        </h4>
+        <a
+          href="#quote"
+          onclick="putarMusik()"
+          data-aos="fade-down"
+          data-aos-delay="3500"
+          data-aos-duration="3000"
+          >Lihat Undangan</a
+        >
+      </div>
+
+      <img class="l-bottom" src="assets/img/elementcover.png" alt="" />
+      <img class="r-bottom" src="assets/img/elementcover.png" alt="" />
+      <img class="l-top" src="assets/img/elementcover.png" alt="" />
+      <img class="r-top" src="assets/img/elementcover.png" alt="" />
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <nav>
+      <div id="nav-container">
+        <a href="#profile"
+          ><img src="assets/img/profile.svg" class="navicon" alt="profile"
+        /></a>
+        <a href="#date-location"
+          ><img
+            src="assets/img/location.png"
+            class="navicon"
+            alt="date-location"
+        /></a>
+        <a href="#moment"
+          ><img src="assets/img/gallery.svg" class="navicon" alt="gallery"
+        /></a>
+        <a href="#rsvp"
+          ><img src="assets/img/rsvp.png" class="navicon" alt="rsvp"
+        /></a>
+        <a href="#story"
+          ><img src="assets/img/story.png" class="navicon" alt="story"
+        /></a>
+      </div>
+    </nav>
+
+    <div id="kotakmusik">
+      <audio id="musik" loop autoplay>
+        <source
+          src="assets/audio/spotifydown.com - Nothing's Gonna Change My Love for You.mp3"
+        />
+        Musik tidak dapat diputar
+      </audio>
+      <div id="ctrlmusik" onclick="putarMusik()">
+        <img id="imgmusik" src="assets/img/pause.png" />
+      </div>
+    </div>
+
+    <div id="quote">
+      <div id="container-quote">
+        <img
+          src="assets/img/quotegadang.png"
+          class="quotehead"
+          alt="quote decoration"
+        />
+        <p
+          class="Surat"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          dataa-aos-delay="2000"
+        >
+          وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا
+          لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةًۗ
+          اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ
+        </p>
+        <p
+          class="Arti"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          dataa-aos-delay="2000"
+        >
+          "Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan
+          pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa
+          tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih
+          sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat
+          tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
+        </p>
+        <h4
+          data-aos="fade-left"
+          data-aos-duration="2000"
+          dataa-aos-delay="2000"
+        >
+          (Ar-Rum - Ayat 21)
+        </h4>
+        <audio autoplay loop>
+          <source
+            src="audio/VIRZHA - TENTANG RINDU LIRIK.mp3"
+            type="audio/mpeg"
+            class="audio-background"
+          />
+        </audio>
+      </div>
+    </div>
+
+    <!-- Profile Section -->
+    <div id="profile">
+      <img
+        alt="perbatasan"
+        src="assets/img/borderquote.png"
+        class="element-profile-border-quote"
+      />
+      <img
+        alt="bunga"
+        src="assets/img/bunganyamping.png"
+        class="element-profile-bawah-kiri"
+      />
+      <img
+        alt="bunga"
+        src="assets/img/bunganyamping.png"
+        class="element-profile-atas-kanan"
+      />
+
+      <div id="container-profile">
+        <img
+          alt="pojokanatas"
+          src="assets/img/pojok.png"
+          class="element-profile-pojok-atas"
+        />
+        <img
+          alt="pojokanbawah"
+          src="assets/img/pojok.png"
+          class="element-profile-pojok-bawah"
+        />
+        <div
+          class="wanita"
+          data-aos="zoom-out-up"
+          data-aos-duration="2000"
+          dataa-aos-delay="2000"
+        >
+          <div class="container-foto-wanita">
+            <img
+              src="assets/img/fotowanita.jpg"
+              alt="foto-wanita"
+              class="foto-wanita"
+            />
+          </div>
+
+          <div
+            class="container-instagram-wanita"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            dataa-aos-delay="2000"
+          >
+            <a
+              href="https://www.instagram.com/dessarrukmana/"
+              target="_blank"
+              class="link-instagram-wanita"
+            >
+              <div class="instagram-icon" target="blank">
+                <img
+                  src="assets/img/instagram (1).png"
+                  alt="Instagram"
+                  class="icon-instagram"
+                />
+              </div>
+              <div class="instagram-text">
+                <p>@fulanaajaa</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="container-text-wanita">
+            <div
+              class="container-orangtua-wanita"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              dataa-aos-delay="2000"
+            >
+              <p>
+                Putri pertama dari <br />
+                Bapak Budi S.Kom &<br />
+                Ibu Lasmi <br />dari Bekasi Barat
+              </p>
+            </div>
+            <div class="container-namalengkap-wanita">
+              <p
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                dataa-aos-delay="1000"
+              >
+                Fulana Nana
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pria">
+          <div class="container-text-pria">
+            <div class="container-namalengkap-pria">
+              <p
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                dataa-aos-delay="2500"
+              >
+                Fulan Nazmit
+              </p>
+            </div>
+            <div class="container-orangtua-pria">
+              <p data-aos="fade-up"
+              data-aos-duration="2000"
+              dataa-aos-delay="2500">
+                Putra bungsu dari <br />
+                Bapak Ambar St Mpd &<br />
+                Ibu Tuti <br />dari Bekasi Timur
+              </p>
+            </div>
+          </div>
+
+          <div class="container-instagram-pria" data-aos="fade-right"
+          data-aos-duration="2000"
+          dataa-aos-delay="2500">
+            <a
+              href="https://www.instagram.com/dessarrukmana/"
+              target="_blank"
+              class="link-instagram-pria"
+            >
+              <div class="instagram-icon" target="blank">
+                <img
+                  src="assets/img/instagram (1).png"
+                  alt="Instagram"
+                  class="icon-instagram"
+                />
+              </div>
+              <div class="instagram-text">
+                <p>@fulannazmit</p>
+              </div>
+            </a>
+          </div>
+          <div class="container-foto-pria" data-aos="fade-up"
+          data-aos-duration="2000"
+          dataa-aos-delay="2500">
+            <img
+              src="assets/img/fotopria.jpg"
+              alt="foto-pria"
+              class="foto-pria"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="date-location">
+      <img
+        alt="perbatasan"
+        src="assets/img/borderakad.png"
+        class="element-quote-border-akad"
+        data-aos="fade-left"
+                data-aos-duration="2000"
+                dataa-aos-delay="2500"
+      />
+
+      <img
+        alt="elementflower"
+        src="assets/img/dateflowerelement.png"
+        class="date-flower-1"
+        data-aos="fade-down"
+                data-aos-duration="2000"
+                dataa-aos-delay="2500"
+      />
+      <img
+        alt="elementflower"
+        src="assets/img/dateflowerelement2.png"
+        class="date-flower-2"
+        data-aos="fade-down"
+                data-aos-duration="2000"
+                dataa-aos-delay="2500"
+      />
+      <img
+        alt="elementflower"
+        src="assets/img/dateflowerelement3.png"
+        class="date-flower-3"
+        data-aos="fade-down"
+                data-aos-duration="2000"
+                dataa-aos-delay="2500"
+      />
+      <div id="date-location-container">
+        <div class="akad-nikah">
+          <div id="judul-date">
+            <h2 class="akad-nikah" data-aos="fade-down"
+            data-aos-duration="2000"
+            dataa-aos-delay="2500">Akad Nikah</h2>
+          </div>
+          <div id="date">
+            <p class="date-child" data-aos="fade-left"
+            data-aos-duration="2000"
+            dataa-aos-delay="2500">JUMAT, 31 FEBRUARI 2031</p>
+          </div>
+          <div id="hour" data-aos="fade-right"
+          data-aos-duration="2000"
+          dataa-aos-delay="2500">
+            <img alt="clock" src="assets/img/clock.png" class="hour-clock" />
+            <p class="hour-child">pukul 12:00 WIB - selesai</p>
+          </div>
+          <div id="location" data-aos="fade-left"
+          data-aos-duration="2000"
+          dataa-aos-delay="2500">
+            <img
+              alt="clock"
+              src="assets/img/location.png"
+              class="location-img"
+            />
+            <p class="location-child">Plataran Menteng, Jalan HOS.</p>
+            <p class="location-child">Cokroaminoto, RT.6/RW.4, Gondangdia,</p>
+            <p class="location-child">
+              Kota Jakarta Pusat, Daerah Khusus Ibukota
+            </p>
+            <p class="location-child">Jakarta, Indonesia</p>
+          </div>
+          <div id="btn-location" data-aos="fade-up"
+          data-aos-duration="2000"
+          dataa-aos-delay="2500">
+            <a
+              class="link-location"
+              href="https://www.google.com/maps/place/Plataran+Menteng/@-6.1918962,106.8260063,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f423590651f7:0x983424b56075bd8!8m2!3d-6.1919015!4d106.8285812!16s%2Fg%2F11c5sw4rnx?entry=ttu&g_ep=EgoyMDI0MDkwOC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              >Lihat Lokasi</a
+            >
+          </div>
+          <iframe
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            dataa-aos-delay="2500"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.542595082653!2d106.8285812!3d-6.191901499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f423590651f7%3A0x983424b56075bd8!2sPlataran%20Menteng!5e0!3m2!1sid!2sid!4v1726107627007!5m2!1sid!2sid"
+            width="300vh"
+            height="40%"
+            style="border: 3"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="resepsi">
+          <div id="judul-date" data-aos="fade-up"
+          data-aos-duration="2000"
+          dataa-aos-delay="2500">
+            <h2 class="resepsi">Resepsi</h2>
+          </div>
+          <div id="date" data-aos="fade-left"
+          data-aos-duration="2000"
+          dataa-aos-delay="2500">
+            <p class="date-child">Sabtu, 01 Maret 2031</p>
+          </div>
+          <div id="hour" data-aos="fade-right"
+          data-aos-duration="2000"
+          dataa-aos-delay="2500">
+            <img alt="clock" src="assets/img/clock.png" class="hour-clock" />
+            <p class="hour-child">pukul 20:00 WIB - selesai</p>
+          </div>
+          <div id="location" data-aos="fade-left"
+          data-aos-duration="2000"
+          dataa-aos-delay="2500">
+            <img
+              alt="Location"
+              src="assets/img/location.png"
+              class="location-img"
+            />
+            <p class="location-child">DoubleTree by Hilton Jakarta -</p>
+            <p class="location-child">Diponegoro</p>
+            <p class="location-child">Jakarta Pusat</p>
+          </div>
+          <div id="btn-location" data-aos="fade-right"
+          data-aos-duration="2000"
+          dataa-aos-delay="2500">
+            <a
+              class="link-location"
+              href="https://www.google.com/maps/place/DoubleTree+by+Hilton+Hotel+Jakarta+-+Diponegoro/@-6.1991107,106.8430729,17z/data=!4m9!3m8!1s0x2e69f46ad4ba231d:0x2dbd0001fc1c5d26!5m2!4m1!1i2!8m2!3d-6.1991107!4d106.8430729!16s%2Fg%2F1ptzf2fp4?entry=ttu&g_ep=EgoyMDI0MDkwOC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              >Lihat Lokasi</a
+            >
+          </div>
+          <iframe data-aos="fade-up"
+          data-aos-duration="2000"
+          dataa-aos-delay="2500"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.488416822442!2d106.8430729!3d-6.199110699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f46ad4ba231d%3A0x2dbd0001fc1c5d26!2sDoubleTree%20by%20Hilton%20Hotel%20Jakarta%20-%20Diponegoro!5e0!3m2!1sid!2sid!4v1726108132436!5m2!1sid!2sid"
+            width="300vh"
+            height="40%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="moment">
+      <div class="container-foto" data-aos="fade-up"
+      data-aos-duration="2000"
+      dataa-aos-delay="2500">
+        <div class="text-judul">
+          <h2 class="judul-gallery" data-aos="fade-down"
+          data-aos-duration="2000"
+          dataa-aos-delay="3500">Our Gallery</h2>
+        </div>
+        <div class="moment-foto">
+          <div class="moment-foto-item">
+            <img class="foto" src="assets/img/moment1.jpg" alt="foto-1" data-aos="fade-right"
+            data-aos-duration="2000"
+            dataa-aos-delay="2500"/>
+          </div>
+          <div class="moment-foto-item">
+            <img class="foto" src="assets/img/moment2.jpeg" alt="foto-2" data-aos="fade-leftt"
+            data-aos-duration="2000"
+            dataa-aos-delay="3500"/>
+          </div>
+          <div class="moment-foto-item">
+            <img class="foto" src="assets/img/moment3.jpg" alt="foto-3" data-aos="fade-right"
+            data-aos-duration="2000"
+            dataa-aos-delay="4500"/>
+          </div>
+          <div class="moment-foto-item">
+            <img class="foto" src="assets/img/moment4.webp" alt="foto-4" data-aos="fade-left"
+            data-aos-duration="2000"
+            dataa-aos-delay="2500"/>
+          </div>
+          <div class="moment-foto-item">
+            <img class="foto" src="assets/img/moment5.webp" alt="foto-5" data-aos="fade-right"
+            data-aos-duration="2000"
+            dataa-aos-delay="3500"/>
+          </div>
+          <div class="moment-foto-item">
+            <img class="foto" src="assets/img/moment6.webp" alt="foto-6" data-aos="fade-left"
+            data-aos-duration="2000"
+            dataa-aos-delay="3500"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-video">
+        <div class="text-judul">
+          <h2 class="judul-video" data-aos="fade-up"
+          data-aos-duration="2000"
+          dataa-aos-delay="2500">Our Video</h2>
+        </div>
+        <div class="moment-video">
+          <div class="moment-video-item">
+            <iframe data-aos="fade-up"
+            data-aos-duration="2000"
+            dataa-aos-delay="2500"
+              width="90%"
+              height="90%"
+              src="https://www.youtube.com/embed/2Rj7xplS7VU?si=MjRB6K1QfaujuHjb"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="moment-video-item">
+            <video controls data-aos="fade-right"
+            data-aos-duration="2000"
+            dataa-aos-delay="2500">
+              <source src="assets/video/videoprewed.mp4" type="video/mp4"
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tamu">
+      <h3 data-aos="fade-right"
+      data-aos-duration="2000"
+      dataa-aos-delay="2500">Tamu Khusus</h3>
+      <div class="table">
+        <table data-aos-duration="2000"
+        dataa-aos-delay="2500"
+        data-aos="fade-up">
+          <tr>
+            <th rowspan="2" data-aos-duration="2000"
+            dataa-aos-delay="2500"
+            data-aos="fade-right">Guest Name</th>
+            <th colspan="2" data-aos-duration="2000"
+            dataa-aos-delay="4500"
+            data-aos="fade-down">Hubungan</th>
+            <th rowspan="2" data-aos-duration="2000"
+            dataa-aos-delay="2500"
+            data-aos="fade-left">Alamat</th>
+          </tr>
+          <tr>
+            <th data-aos-duration="2000"
+            dataa-aos-delay="3500"
+            data-aos="fade-down">Keluarga</th>
+            <th data-aos-duration="2000"
+            dataa-aos-delay="3500"
+            data-aos="fade-down">Non Keluarga</th>
+          </tr>
+
+          <tr>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="2500"
+            data-aos="fade-right">Kak Artha</td>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="3500"
+            data-aos="fade-up">✓</td>
+            <td></td>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="4500"
+            data-aos="fade-let">Indramayu</td>
+          </tr>
+          <tr>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="2500"
+            data-aos="fade-right">Jauza Akram</td>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="3500"
+            data-aos="fade-up">✓</td>
+            <td></td>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="4500"
+            data-aos="fade-left">Jl Kartini 2 Bekasi Timur</td>
+          </tr>
+
+          <tr>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="2500"
+            data-aos="fade-right">Abah</td>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="3500"
+            data-aos="fade-up">✓</td>
+            <td></td>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="4500"
+            data-aos="fade-left">Jl Pulau Tidore 8 Bekasi Timur</td>
+          </tr>
+
+          <tr>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="2500"
+            data-aos="fade-right">Mr Jiyo</td>
+            <td></td>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="3500"
+            data-aos="fade-up">✓</td>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="4500"
+            data-aos="fade-left">Filipino</td>
+          </tr>
+
+          <tr>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="2500"
+            data-aos="fade-right">Anaqi Qoish & Hijri</td>
+            <td></td>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="3500"
+            data-aos="fade-up">✓</td>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="4500"
+            data-aos="fade-left">Singapore</td>
+          </tr>
+
+          <tr>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="2500"
+            data-aos="fade-right">Nil, Asta & Mad</td>
+            <td></td>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="3500"
+            data-aos="fade-up">✓</td>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="4500"
+            data-aos="fade-left">Malaysia</td>
+          </tr>
+
+          <tr>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="2500"
+            data-aos="fade-right">Mr Itchy</td>
+            <td></td>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="3500"
+            data-aos="fade-up">✓</td>
+            <td data-aos-duration="2000"
+            dataa-aos-delay="4500"
+            data-aos="fade-left">China-Hongkong</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="rsvp">
+      <div class="container-rsvp">
+        <div class="rsvp-head">
+          <h2 data-aos-duration="2000"
+          dataa-aos-delay="3500"
+          data-aos="fade-up">Konfirmasi Kehadiran</h2>
+        </div>
+        <div class="rsvp-body">
+          <form method="GET">
+            <label for="txtnama">Nama: </label>
+            <input type="text" name="nama" id="txtnama" />
+
+            <label for="numtelp">No Telp: </label>
+            <input type="number" name="telp" id="numtelp" />
+
+            <label>Konfirmasi kehadiran :</label>
+
+            <div class="rsvp-radio-group">
+              <input
+                type="radio"
+                value="datang"
+                name="kehadiran"
+                id="datang"
+                class="radio"
+              />
+              <label for="datang">Iya, saya akan datang</label>
+            </div>
+
+            <div class="rsvp-radio-group">
+              <input
+                type="radio"
+                value="wanita"
+                name="kehadiran"
+                id="tidakdatang"
+                class="radio"
+              />
+              <label for="tidakdatang">Maaf, Sepertinya tidak bisa</label>
+            </div>
+
+            <div>
+              <label>Datangnya Kapan :</label><br />
+              <input
+                type="checkbox"
+                value="Akad"
+                name="kedatangan[]"
+                id="kedatanganakad"
+              />
+              <label for="kedatanganakad">Akad</label><br />
+
+              <input
+                type="checkbox"
+                value="Resepsi"
+                name="kedatangan[]"
+                id="kedatanganresepsi"
+              />
+              <label for="kedatanganresepsi">Resepsi</label><br />
+            </div>
+
+            <label for="numtamu" class="selectbox">Berapa yang datang:</label>
+            <select name="tamu" id="numtamu">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="other">lebih banyak</option>
+            </select>
+
+            <label>Komentar : </label>
+            <textarea id="komentar"></textarea>
+
+            <input type="submit" value="submit" id="submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="story">
+      <div class="container-story">
+        <div class="container-storys">
+          <div class="container-story-foto" data-aos-duration="2000"
+          dataa-aos-delay="2500"
+          data-aos="zoom-in">
+            <img
+              alt="foto-story-1"
+              class="story-foto"
+              src="assets/img/fotostory1.jpg"
+            />
+          </div>
+          <div class="container-story-text">
+            <h4 class="tahun-story" data-aos-duration="2000"
+            dataa-aos-delay="2500"
+            data-aos="zoom-in">2024</h4>
+            <p class="text-story"data-aos-duration="2000"
+            dataa-aos-delay="2500"
+            data-aos="fade-left">Fulan dan Fulana bertemu di bangku SMK</p>
+          </div>
+        </div>
+
+        <div class="container-storys">
+          <div class="container-story-foto" data-aos-duration="2000"
+          dataa-aos-delay="2500"
+          data-aos="zoom-out">
+            <img
+              alt="foto-story-2"
+              class="story-foto"
+              src="assets/img/fotostory2.avif"
+            />
+          </div>
+          <div class="container-story-text">
+            <h4 class="tahun-story" data-aos-duration="2000"
+            dataa-aos-delay="2500"
+            data-aos="fade-up">2031</h4>
+            <p class="text-story" data-aos-duration="2000"
+            dataa-aos-delay="2500"
+            data-aos="zoom-in">Fulan akhirnya melamar Fulana</p>
+          </div>
+        </div>
+
+        <div class="container-storys">
+          <div class="container-story-foto" data-aos-duration="2000"
+          dataa-aos-delay="2500"
+          data-aos="zoom-out-up">
+            <img
+              alt="foto-story-2"
+              class="story-foto"
+              src="assets/img/fotostory3.webp"
+            />
+          </div>
+          <div class="container-story-text">
+            <h4 class="tahun-story" data-aos-duration="2000"
+            dataa-aos-delay="2500"
+            data-aos="zoom-in">Sekarang</h4>
+            <p class="text-story" data-aos-duration="2000"
+            dataa-aos-delay="2500"
+            data-aos="fade-up">Kami akan mengadakan pernikahan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hadiah">
+      <div class="container-hadiah">
+        <div class="container-judul-hadiah" data-aos-duration="2000"
+        dataa-aos-delay="2500"
+        data-aos="fade-up">
+          <h2>Kirim Hadiah</h2>
+        </div>
+
+        <div class="hadiah-box">
+          <div class="hadiah-judul">
+            <h3>Alamat</h3>
+          </div>
+          <div class="hadiah-body">
+            <div class="hadiah-nama">Fulan & Fulana</div>
+            <div class="hadiah-alamat">Perumnas 1 Bekasi Barat</div>
+          </div>
+        </div>
+
+        <div class="hadiah-box">
+          <div class="hadiah-judul">
+            <h3>BCA</h3>
+          </div>
+          <div class="hadiah-body">
+            <div class="hadiah-nama">Fulan</div>
+            <div class="hadiah-alamat">0090908</div>
+            <div class="hadiah-gambar">
+              <img alt="bca" src="assets/img/fotobca.png" class="fotobca" />
+            </div>
+          </div>
+        </div>
+
+        <div class="hadiah-box">
+          <div class="hadiah-judul">
+            <h3>QRIS</h3>
+          </div>
+          <div class="hadiah-qris">
+            <div class="hadiah-gambar">
+              <img
+                alt="qris"
+                src="assets/img/hadiahqris.jpg"
+                class="fotoqris"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="pesan">
+      <div id="pesan-container" data-aos-duration="2000"
+      dataa-aos-delay="2500"
+      data-aos="fade-left">
+        <h2 data-aos-duration="2000"
+        dataa-aos-delay="2500"
+        data-aos="zoom-out-left">Kirim Pesan</h2>
+        <form method="GET" id="pesan-form">
+          <div class="form-group">
+            <label for="txtnamapesan" class="label-pesan">Nama:</label>
+            <input type="text" name="nama-pesan" id="txtnamapesan" />
+          </div>
+
+          <div class="form-group">
+            <label for="txtLokasipesan" class="label-pesan">Lokasi:</label>
+            <input type="text" name="Lokasi-pesan" id="txtLokasipesan" />
+          </div>
+          <div class="form-group">
+            <label for="komentarpesan" class="label-pesan">Komentar:</label>
+            <textarea id="komentarpesan"></textarea>
+          </div>
+
+          <div class="form-group">
+            <input type="submit" value="Kirim Pesan" id="submitpesan" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="thanks">
+      <img class="l-bottom" src="assets/img/elementcover2.png" alt="" />
+      <img class="r-bottom" src="assets/img/elementcover2.png" alt="" />
+      <img class="l-top" src="assets/img/elementcover2.png" alt="" />
+      <img class="r-top" src="assets/img/elementcover2.png" alt="" />
+      <div class="thank-text">
+        <h2 class="judul-thank" data-aos-duration="2000"
+        dataa-aos-delay="2500"
+        data-aos="fade-up">Terima Kasih</h2>
+        <p class="pengantin-thank" data-aos-duration="2000"
+        dataa-aos-delay="2500"
+        data-aos="zoom-in">Hormat Kami</p>
+        <h3 class="pengantin" data-aos-duration="2000"
+        dataa-aos-delay="2500"
+        data-aos="zoom-out">Fulan & Fulana</h3>
+      </div>
+    </div>
+    
+  </body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    // Add smooth scrolling to all links
+    $("a").on("click", function (event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $("html, body").animate(
+          {
+            scrollTop: $(hash).offset().top,
+          },
+          800,
+          function () {
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          }
+        );  
+      } // End if
+    });
+  });
+</script>
